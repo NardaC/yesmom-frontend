@@ -1,0 +1,32 @@
+.navbar{
+    padding: 1rem 5rem!important;
+}
+
+.logo-yesmom{
+    width: 5rem;
+}
+.item-navbar{
+    display: flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.item-menu{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 0 .5rem!important;
+}
+
+.item-menu img{
+    width: 100%;
+    height: 100%;
+}
+
+.input-search{
+    border: none!important;
+    border-bottom: 1px solid #000!important;
+    border-radius: 0!important;
+}
+

@@ -1,38 +1,54 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+
+html {
+  font-size: 0.98vw !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.title-fuxia {
+  color: #ec608d;
+  font-weight: 1000;
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 0 1rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.subtitle-dark {
+  color: #575756;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-yellow {
+  background-color: #febf41;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1.5rem 0rem;
+  margin: 2rem auto;
+  width: 13rem;
+  border-radius: 30px;
+}
+.bg-fuxia {
+  background: #ec608d!important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-verde{
+  background-color: #C9DBC3!important;
+}
+.bg-azul{
+  background: #4B64A4!important;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 769px) {
+  html {
+    font-size: 4.6vw;
   }
 }
