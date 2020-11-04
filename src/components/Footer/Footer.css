@@ -1,13 +1,20 @@
 .footer{
-    background: #556EA1,
-    url("../../assets/trama-footer.svg");
+    background: #556EA1;
+    background-image: url("../../assets/trama-footer.svg"); 
     color: #fff;
-    /* background:linear-gradient(
-      270deg,
-      #556EA1 0%,
-      #556EA1 13.49%,
-      #556EA1 100%
-    ),
-    url("../../assets/trama-footer.svg"); */
-    
+    background-position: top center;
+    background-size: cover;
+    padding: 5rem 0;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tilte-footer{
+    margin-bottom: 1.5rem;
+}
+
+.icon-redes{
+    font-size: 1.5rem;
+    margin-right: .7rem;
+    margin-left: .7rem;
 }

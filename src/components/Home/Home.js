@@ -136,7 +136,7 @@ const Home = () => {
                   </div>
                 </Col>
               </Row>
-              <a href="/" className="ver-mas-home">Ver más</a>
+              <a href="/blog" className="ver-mas-home">Ver más &#8594;</a>
             </Container>
           </Col>
         </Row>

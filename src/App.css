@@ -10,6 +10,10 @@ html {
   width: 80%;
 }
 
+
+.pl-10{
+  padding-left: 6rem;
+}
 .title-fuxia {
   color: #ec608d;
   font-weight: 1000;
