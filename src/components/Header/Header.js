@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div>
       <Navbar expand="lg" className=" justify-content-between">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={logo} alt="logo yesmom" className="logo-yesmom" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

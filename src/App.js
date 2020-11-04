@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Blog from "./components/Blog/Blog";
+import BlogEspecific from "./components/Blog/BlogEspecific";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/blog" exact>
           <Blog></Blog>
+        </Route>
+        <Route path="/blog-especific" exact>
+          <BlogEspecific></BlogEspecific>
         </Route>
       </Switch>
       <Footer></Footer>

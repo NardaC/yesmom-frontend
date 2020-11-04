@@ -12,7 +12,7 @@ const Blog = () => {
     <>
       <div className="box-banner-blog">
         <img src={ondas} alt="ondas" className="ondas" />
-        <h4 className="text-title-blog">Sorteo</h4>
+        <h4 className="text-title-blog">Blog</h4>
         <img src={ondas} alt="ondas" className="ondas" />
       </div>
       <h4 className="subtitle-dark-blog">

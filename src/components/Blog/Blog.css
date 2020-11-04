@@ -15,8 +15,8 @@
   text-align: center;
 }
 
-.subtitle-dark-blog{
-    color: #575756;
+.subtitle-dark-blog {
+  color: #575756;
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   text-align: center;
@@ -24,10 +24,10 @@
   margin-bottom: -12rem;
   margin-top: 3rem;
 }
-.box-card-group{
-    position: relative;
-    top: 16rem;
-    z-index: 10;
+.box-card-group {
+  position: relative;
+  top: 16rem;
+  z-index: 10;
 }
 
 .card-blog {
@@ -40,12 +40,12 @@
   width: 18rem;
   height: 29rem;
 }
-.box-green-blog{
-    position: relative;
+.box-green-blog {
+  position: relative;
 }
 
-.text-bottom-blog{
-    color: #ABC0A3;
+.text-bottom-blog {
+  color: #abc0a3;
   font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   text-align: center;
@@ -54,4 +54,18 @@
   bottom: 16%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.box-blog-general {
+  width: 100%;
+  display: flex;
+}
+
+.box-autor-blog {
+  width: 20%;
+}
+
+.box-articulo-blog {
+  width: 80%;
+  padding: 2rem;
 }
