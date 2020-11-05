@@ -10,7 +10,7 @@ import BlogEspecific from "./components/Blog/BlogEspecific";
 
 function App() {
   return (
-    <Router className="">
+    <Router>
       <Header />
       <Switch>
         <Route path="/" exact>

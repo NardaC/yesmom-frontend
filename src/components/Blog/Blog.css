@@ -59,13 +59,65 @@
 .box-blog-general {
   width: 100%;
   display: flex;
+  padding: 4rem 9rem;
 }
 
 .box-autor-blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 7rem;
   width: 20%;
 }
-
+.box-autor-text-blog {
+  padding-left: 1rem;
+}
 .box-articulo-blog {
   width: 80%;
-  padding: 2rem;
+}
+.text-autor {
+  color: #575756;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.text-fecha {
+  color: #556ea1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.box-articulo-title-blog {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  color: #575756;
+  margin: 2rem 0rem;
+}
+.star-blog {
+  color: #febf41;
+}
+.nube1{
+  position: absolute;
+  top: 70%;
+  left: 2%;
+}
+.nube2{
+  position: absolute;
+  top: 50%;
+  right:2%;
+}
+.nube3{
+  position: absolute;
+  top: 140%;
+  right:3%;
+}
+.box-articulo-img-principal-blog{
+  position: relative;
+  z-index: 2;
+}
+.jodit-container:not(.jodit_inline) {
+  border: none!important;
 }
