@@ -1,0 +1,58 @@
+.box-banner-about {
+  height: 15rem;
+  background: url(../../assets/about-header.png) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-somos-yesmom {
+  padding: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  position: relative;
+}
+
+.line-up-somos {
+  position: absolute;
+  top: -2rem;
+  right: 2rem;
+  width: 2.5rem;
+  transform: rotate(90deg);
+}
+
+.line-down-somos {
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  width: 2.5rem;
+  transform: rotate(90deg);
+}
+
+.nube1-somos {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+.nube2-somos {
+  position: absolute;
+  right: 2%;
+  bottom: 5%;
+}
+
+.fondo-video-somos {
+  background: url(../../assets/fondo-verde-somos.png);
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.box-video-somos {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}

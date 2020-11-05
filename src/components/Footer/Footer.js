@@ -19,7 +19,7 @@ const Footer = () => {
               <p>Tienda</p>
               <p>Regalos</p>
               <p>Regalos</p>
-              <p>Sobre nosotros</p>
+              <a href="/nosotros" ><p>Sobre nosotros</p></a>
               <p>Términos y condiciones</p>
               <p>Libro de reclamaciones</p>
               <p>Política de privacidad</p>
