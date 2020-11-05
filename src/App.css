@@ -76,6 +76,6 @@ html {
 
 @media (max-width: 769px) {
   html {
-    font-size: 4.6vw;
+    font-size: 4.6vw!important;
   }
 }
