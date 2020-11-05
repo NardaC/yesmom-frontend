@@ -13,6 +13,7 @@
 .section-sorteo-home {
   padding-top: 5rem;
   padding-bottom: 5rem;
+  position: relative;
 }
 
 .box-text-title {
