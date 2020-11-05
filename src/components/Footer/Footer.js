@@ -9,24 +9,26 @@ const Footer = () => {
   return (
     <div className="footer">
       <Container>
+        <div>
+
+        </div>
         <Row>
-          <Col >
-            <div className="pl-10 text-left">
+          <Col xs={12} md={4}>
+            <div className="padding-left text-left">
               <h6 className="tilte-footer">
                 <b>CONTENIDO</b>
               </h6>
-              <p>Blog</p>
-              <p>Tienda</p>
-              <p>Regalos</p>
-              <p>Regalos</p>
+              <a href="/nosotros" ><p>Blog</p></a>
+              <a href="/nosotros" ><p>Tienda</p></a>
+              <a href="/nosotros" ><p>Regalos</p></a>
               <a href="/nosotros" ><p>Sobre nosotros</p></a>
-              <p>Términos y condiciones</p>
-              <p>Libro de reclamaciones</p>
-              <p>Política de privacidad</p>
+              <a href="/nosotros" ><p>Términos y condiciones</p></a>
+              <a href="/nosotros" ><p>Política de privacidad</p></a>
+              <a href="/nosotros" ><p>Libro de reclamaciones</p></a>
             </div>
           </Col>
-          <Col >
-            <div className="pl-10 text-center">
+          <Col xs={12}  md={4}>
+            <div className="padding-left text-center">
               <h6 className="tilte-footer">
                 <b>CONTÁCTANOS</b>
               </h6>
@@ -35,8 +37,8 @@ const Footer = () => {
               <p>123 Los Robles Miraflores</p>
             </div>
           </Col>
-          <Col >
-            <div className="pl-10 text-center">
+          <Col xs={12}  md={4} >
+            <div className="padding-left text-center">
               <h6 className="tilte-footer">
                 <b>SÍGUENOS</b>
               </h6>
