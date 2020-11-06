@@ -72,7 +72,11 @@ html {
     max-width: 1500px !important;
   }
 } */
-
+.box-yesmom{
+  max-width: 1800px;
+  width: 100%;
+  margin:auto;
+}
 
 @media (max-width: 769px) {
   html {

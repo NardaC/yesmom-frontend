@@ -197,25 +197,165 @@
   margin: 0rem 5rem 0rem 5rem !important;
 }
 
-.ver-mas-home{
+.ver-mas-home {
 }
+@media (min-width: 1800px) {
+  .box-banner {
+    height: 25rem;
+    width: auto;
+  }
 
+  .section-sorteo-home {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
+
+  .box-text-title {
+    padding-top: 5rem;
+  }
+
+  .ondas {
+    width: 6rem;
+  }
+
+  .box-sorteo-home {
+    width: 31.5rem;
+    text-align: center;
+    margin: 2rem auto;
+  }
+  .box-sorteo-home .title-fuxia {
+    font-size: 1.5rem;
+  }
+  .box-sorteo-home .subtitle-dark {
+    font-size: 1.2rem;
+  }
+  .btn-yellow {
+    font-weight: 900;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0rem;
+    margin: 1rem auto;
+    width: 8rem;
+    border-radius: 30px;
+  }
+  .img-sorteo {
+    width: 80%;
+  }
+  .line-up {
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    width: 2.5rem;
+  }
+  .line-down {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 4.5rem;
+    width: 2.5rem;
+  }
+
+  .section-lo-mejor-home {
+    padding: 4rem 0rem;
+  }
+
+  .box-title-lo-mejor-home {
+    font-size: 0.7rem;
+  }
+  .box-title-lo-mejor-home .title-fuxia {
+    font-size: 1.5rem;
+  }
+
+  .nube-up {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+    width: 15rem;
+  }
+
+  .nube-down {
+    position: absolute;
+    transform: rotate(180deg);
+    width: 15rem;
+    right: 5%;
+    bottom: -6%;
+  }
+
+  .box-img-lo-mejor {
+    margin-left: 15rem !important;
+    margin-right: 15rem !important;
+    margin: 3rem 0;
+  }
+
+  .img-lo-mejor {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .onda-rosa {
+    width: 4rem;
+  }
+
+  .btn-lo-mejor {
+    padding: 1.5rem;
+    font-weight: 1000;
+    font-size: 1rem;
+    width: 10rem;
+    height: 4.5rem;
+  }
+  .section-blog-home {
+    padding: 3rem 0;
+  }
+  .box-img-blog-home {
+    padding: 5rem 0;
+  }
+
+  .line-up-azul {
+    top: 3rem;
+    left: 5.5rem;
+  }
+
+  .line-down-azul {
+    bottom: 3rem;
+    right: 1.5rem;
+  }
+
+  .img-blog {
+    width: 80%;
+  }
+
+  .container-blog-home {
+    padding: 1rem 0;
+  }
+
+  .title-fuxia {
+    font-size: 1.5rem;
+  }
+
+  .btn-blog-home {
+    width: auto;
+    height: 4.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box-btn-blog {
+    margin: 0rem 3rem 0rem 3rem !important;
+  }
+}
 @media (max-width: 769px) {
-
-  .section-sorteo-home{
+  .section-sorteo-home {
     padding-top: 1rem;
   }
-  .box-text-title{
+  .box-text-title {
     padding-top: 1rem;
   }
-  .box-sorteo-home{
-      width: 100%!important;
-      padding-left: 1rem;
-      padding-right: 1rem;
+  .box-sorteo-home {
+    width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-  .box-img-sorteo-home{
+  .box-img-sorteo-home {
     margin: auto;
-      display: block;
+    display: block;
   }
   .img-sorteo {
     width: 80%;
@@ -223,72 +363,72 @@
     margin: auto;
   }
 
-  .box-img-lo-mejor{
-    margin: 0rem!important;
-    margin-top:2rem!important
+  .box-img-lo-mejor {
+    margin: 0rem !important;
+    margin-top: 2rem !important;
   }
 
-  .img-lo-mejor{
+  .img-lo-mejor {
     width: 12rem;
     height: 12rem;
   }
 
-  .line-up{
+  .line-up {
     width: 1.5rem;
-    top: .3rem;
-    left: .7rem;
+    top: 0.3rem;
+    left: 0.7rem;
   }
 
-  .line-down{
-    bottom: -.2rem;
-    right: .5rem;
+  .line-down {
+    bottom: -0.2rem;
+    right: 0.5rem;
     width: 1.5rem;
   }
 
-  .nube-up{
+  .nube-up {
     width: 10rem;
     left: -2rem;
     top: -2rem;
   }
 
-  .nube-down{
+  .nube-down {
     width: 10rem;
     right: -1rem;
     bottom: -2rem;
   }
 
-  .btn-lo-mejor{
+  .btn-lo-mejor {
     font-size: 1rem;
     width: 11rem;
     height: 4rem;
     border-radius: 20px;
   }
 
-  .box-img-blog-home{
+  .box-img-blog-home {
     padding: 1rem;
   }
 
-  .img-blog{
+  .img-blog {
     padding-left: 0rem;
     width: 80%;
   }
 
-  .line-up-azul{
+  .line-up-azul {
     width: 1.5rem;
-    top: -.7rem;
+    top: -0.7rem;
     left: 1.5rem;
   }
 
-  .line-down-azul{
+  .line-down-azul {
     width: 1.5rem;
     right: 1rem;
-    bottom: -.3rem;
+    bottom: -0.3rem;
   }
-  .box-btn-blog{
+  .box-btn-blog {
     margin: 0rem 3rem 0rem 3rem !important;
   }
-  .btn-blog-home{
-    font-size: .9rem;
+  .btn-blog-home {
+    font-size: 0.9rem;
     border-radius: 25px;
     height: 5rem;
   }

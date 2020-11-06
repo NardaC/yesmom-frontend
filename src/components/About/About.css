@@ -64,7 +64,9 @@ position: absolute;
 width: 50%;
 height: 50%;
 }
-
+@media (min-width: 1800px) {
+  
+}
 @media (max-width: 768px) {
   .box-banner-about {
     height: 15rem;

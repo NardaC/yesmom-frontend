@@ -12,6 +12,7 @@ import About from "./components/About/About";
 function App() {
   return (
     <Router>
+      <div className="box-yesmom">
       <Header />
       <Switch>
         <Route path="/" exact>
@@ -27,7 +28,8 @@ function App() {
           <About></About>
         </Route>
       </Switch>
-      <Footer></Footer>
+      <Footer/>
+      </div>
     </Router>
   );
 }
