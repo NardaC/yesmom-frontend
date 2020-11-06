@@ -93,7 +93,7 @@ const Home = () => {
       </Container>
       <Container fluid="true" className="section-blog-home">
         <Row>
-          <Col xs={12}>
+          <Col xs={12} md={6} lg={6} xl={6}>
             <div className="box-img-blog-home">
               <img src={lineasAzul1} alt="lineas" className="line-up-azul" />
               <img
@@ -104,7 +104,7 @@ const Home = () => {
               <img src={lineasAzul2} alt="lineas" className="line-down-azul" />
             </div>
           </Col>
-          <Col xs={12}>
+          <Col xs={12} md={6} lg={6} xl={6}>
             <div className="box-text-title">
               <img src={ondas} alt="ondas" className="ondas" />
               <h4 className="text-title">Blog</h4>
@@ -113,24 +113,24 @@ const Home = () => {
             <h3 className="title-fuxia mt-2">El blog de mamá</h3>
             <Container className="container-blog-home">
               <Row className="box-btn-blog">
-                <Col xs>
+                <Col xs={12} md={6} lg={6} xl={6}>
                   <div className="btn-blog-home">
                     Tips para tu baby shower virtual
                   </div>
                 </Col>
-                <Col xs>
+                <Col xs={12} md={6} lg={6} xl={6}>
                   <div className="btn-blog-home">
                     Artículos básicos para tu baby shower
                   </div>
                 </Col>
               </Row>
               <Row className="box-btn-blog">
-                <Col xs={12}>
+                <Col xs={12} md={6} lg={6} xl={6}>
                   <div className="btn-blog-home">
                     Mi bebé y su maleta para la clínica
                   </div>
                 </Col>
-                <Col xs={12}>
+                <Col xs={12} md={6} lg={6} xl={6}>
                   <div className="btn-blog-home">
                     El cuarto soñado para mi bebé
                   </div>
