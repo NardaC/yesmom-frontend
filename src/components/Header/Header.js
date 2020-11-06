@@ -35,7 +35,7 @@ const Header = () => {
           </figure>
         </Nav.Link> */}
         <Navbar.Collapse id="basic-navbar-nav">
-          <Form inline className="ml-form-seacrh">
+          <Form inline className="ml-form-search">
             <Button variant="">
               <img src={lupa} alt="lupa yesmom" className="lupa-img"/>
             </Button>
