@@ -93,7 +93,7 @@ const Home = () => {
       </Container>
       <Container fluid="true" className="section-blog-home">
         <Row>
-          <Col xs>
+          <Col xs={12}>
             <div className="box-img-blog-home">
               <img src={lineasAzul1} alt="lineas" className="line-up-azul" />
               <img
@@ -104,7 +104,7 @@ const Home = () => {
               <img src={lineasAzul2} alt="lineas" className="line-down-azul" />
             </div>
           </Col>
-          <Col xs>
+          <Col xs={12}>
             <div className="box-text-title">
               <img src={ondas} alt="ondas" className="ondas" />
               <h4 className="text-title">Blog</h4>
