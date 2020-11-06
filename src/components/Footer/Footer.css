@@ -31,6 +31,24 @@
 .padding-left{
     padding-left: 6rem;
 }
+@media (min-width: 1800px) {
+    .footer{
+        padding: 2.5rem 0;
+    }
+    .footer .padding-left{
+        padding-left: 0rem;
+    }
+    .title-footer{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+    .footer .padding-left p{
+        margin-bottom: 0.2rem;
+        font-size: 0.7rem;
+    }
+    
+}
 @media (max-width: 768px) {
     .footer{
         background-image: url("../../assets/trama-footer-responsive.svg"); 
@@ -51,7 +69,7 @@
         text-decoration: none;
     }
     
-    .tilte-footer{
+    .title-footer{
         margin-bottom: 0.5rem;
         margin-top: 1rem;
         font-size: 0.9rem;

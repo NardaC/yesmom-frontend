@@ -15,7 +15,7 @@ const Footer = () => {
         <Row>
           <Col xs={12} md={4}>
             <div className="padding-left text-left">
-              <h6 className="tilte-footer">
+              <h6 className="title-footer">
                 <b>CONTENIDO</b>
               </h6>
               <a href="/nosotros" ><p>Blog</p></a>
@@ -29,7 +29,7 @@ const Footer = () => {
           </Col>
           <Col xs={12}  md={4}>
             <div className="padding-left text-center">
-              <h6 className="tilte-footer">
+              <h6 className="title-footer">
                 <b>CONTÁCTANOS</b>
               </h6>
               <p>mibebe@gmail.com</p>
@@ -39,7 +39,7 @@ const Footer = () => {
           </Col>
           <Col xs={12}  md={4} >
             <div className="padding-left text-center">
-              <h6 className="tilte-footer">
+              <h6 className="title-footer">
                 <b>SÍGUENOS</b>
               </h6>
               <FontAwesomeIcon icon={faFacebookF} className="icon-redes"></FontAwesomeIcon>
