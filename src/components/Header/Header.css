@@ -36,12 +36,34 @@
   margin-left: auto;
 }
 
-.ml-form-search{
+.ml-form-search {
   margin-left: auto;
 }
 
-.lupa-img{
+.lupa-img {
   width: 1.8rem;
+}
+@media (min-width: 1800px) {
+  .logo-yesmom {
+    width: 3.5rem;
+  }
+  .item-menu {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  .item-navbar h6 {
+    font-size: 0.8rem;
+  }
+  .lupa-img {
+    width: 1.3rem;
+  }
+  .form-control {
+    padding: 0.3rem 0.75rem !important;
+    font-size: 0.8rem !important;
+  }
+  .navbar {
+    padding: 0.5rem 5rem !important;
+}
 }
 
 @media (max-width: 991px) {
@@ -70,43 +92,39 @@
     width: 100%;
   }
 
-  .nav-items-collapse img{
+  .nav-items-collapse img {
     display: none;
   }
 
-  .nav-link{
-    padding:0rem 1rem!important;
+  .nav-link {
+    padding: 0rem 1rem !important;
   }
 
-
-  .form-inline{
-    flex-flow: initial!important;
+  .form-inline {
+    flex-flow: initial !important;
     padding-top: 2rem;
-    padding-bottom: 1rem!important;
+    padding-bottom: 1rem !important;
   }
-  .ml-form-search{
+  .ml-form-search {
     margin-left: 0;
-    
   }
 
-  .item-navbar{
-    align-items: flex-start!important;
-
+  .item-navbar {
+    align-items: flex-start !important;
   }
-  .lupa-img{
+  .lupa-img {
     width: 1.5rem;
   }
 
-  .item-navbar h6{
+  .item-navbar h6 {
     font-size: 1.1rem;
   }
 
-  a.item-navbar.nav-link{
-    border-bottom: .5px solid #575756;
+  a.item-navbar.nav-link {
+    border-bottom: 0.5px solid #575756;
   }
   .navbar {
     position: fixed !important;
     width: 100%;
   }
-
 }

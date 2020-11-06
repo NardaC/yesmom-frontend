@@ -161,6 +161,18 @@
 .card-blog {
   height: 26rem;
 }
+.nube1 {
+  top: 50%;
+  left: 20%;
+}
+.nube2 {
+  top: 80%;
+  right: 15%;
+}
+.nube3 {
+  top: 140%;
+  right: 15%;
+}
 }
 @media (max-width: 768px) {
   .box-blog-especifico {
