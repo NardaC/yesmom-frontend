@@ -23,9 +23,9 @@ const About = () => {
         <img src={nube1} alt="nube yesmom" className="nube1-somos" />
         <img src={nube2} alt="nube yesmom" className="nube2-somos" />
         <Row>
-          <Col xs>
+          <Col xs={12}md={6} lg={6} xl={6}>
             <div className="box-somos-yesmom">
-              <img src={yesmom} alt="" className="pb-3" />
+              <img src={yesmom} alt="" className="pb-3 subtitle-about" />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem mi
                 netus id elementum tellus mattis lorem ut scelerisque. Faucibus
@@ -47,7 +47,7 @@ const About = () => {
               </p>
             </div>
           </Col>
-          <Col xs>
+          <Col  xs={12} md={6} lg={6} xl={6}>
             <div className="box-img-sorteo-home">
               <img src={lineasAzul1} alt="lineas" className="line-up-somos" />
               <img
@@ -64,8 +64,6 @@ const About = () => {
         <h3 className="title-fuxia">&#9733; Nuestra historia &#9733;</h3>
         <div className="box-video-somos">
           <iframe
-            width="560"
-            height="315"
             src="https://www.youtube.com/embed/HmvCTcrR8fA"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
