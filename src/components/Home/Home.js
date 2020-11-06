@@ -5,6 +5,7 @@ import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col } from "react-bootstrap";
 import banner from "../../assets/home/banner.png";
+import bannerM from "../../assets/home/banner-mobile.png";
 import sorteo from "../../assets/home/img-sorteo-home.png";
 import ondas from "../../assets/ondas.svg";
 import lineas1 from "../../assets/lineas-rosa1.svg";
@@ -21,7 +22,17 @@ const Home = () => {
   return (
     <>
       <section fluid="true" className="box-banner">
-        <img src={banner} />
+        <img src={banner} className="banner view-desktop" />
+        <img src={bannerM} alt="" className="banner view-mobile"/>
+        <div className="box-banner-btns">
+          <h3 className="title-fuxia">Cada regalo es especial</h3>
+          <img src={ondas} alt="ondas" className="ondas d-block m-auto" />
+          <div className="box-banner-regalos">
+            <div className="btn-regalos bg-azul">Crear lista de regalos</div>
+            <div className="btn-regalos">Buscar lista de regalos</div>
+          </div>
+          <p className="link-a text-center">¿Ya registrado? <b>Inicia sesión</b> </p>
+        </div>
       </section>
       <Container fluid="true" className="section-sorteo-home">
         <Row>
@@ -131,12 +142,14 @@ const Home = () => {
                   </div>
                 </Col>
                 <Col xs={12} md={6} lg={6} xl={6}>
-                   <div className="btn-blog-home">
+                  <div className="btn-blog-home">
                     El cuarto soñado para mi bebé
                   </div>
                 </Col>
               </Row>
-              <a href="/blog" className="ver-mas-home">Ver más &#8594;</a>
+              <a href="/blog" className="ver-mas-home">
+                Ver más &#8594;
+              </a>
             </Container>
           </Col>
         </Row>

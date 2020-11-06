@@ -1,19 +1,51 @@
 .box-banner {
   height: 40rem;
   width: auto;
+  position: relative;
 }
 
-.box-banner img {
+.box-banner-btns {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+.box-banner-regalos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  flex-direction: row;
+}
+
+.box-banner .banner {
   width: 100%;
   object-fit: cover;
   object-position: center;
   height: 100%;
 }
 
+.ondas-banner {
+  width: 1rem;
+}
 .section-sorteo-home {
   padding-top: 5rem;
   padding-bottom: 5rem;
   position: relative;
+}
+
+.btn-regalos {
+  background-color: #febf41;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 1.5rem 0rem;
+  margin: 2rem auto;
+  width: 13rem;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 1.3rem;
 }
 
 .box-text-title {
@@ -199,6 +231,9 @@
 
 .ver-mas-home {
 }
+
+
+
 @media (min-width: 1800px) {
   .box-banner {
     height: 25rem;
@@ -342,6 +377,7 @@
   }
 }
 @media (max-width: 769px) {
+  
   .section-sorteo-home {
     padding-top: 1rem;
   }
@@ -431,5 +467,18 @@
     font-size: 0.9rem;
     border-radius: 25px;
     height: 5rem;
+  }
+  .box-banner-btns {
+    top: 45%;
+  }
+  .box-banner-regalos {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .btn-regalos {
+    width: 15rem;
+    margin: 0.8rem auto;
+    font-size: 1rem;
   }
 }
