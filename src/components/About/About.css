@@ -44,7 +44,7 @@
 
 .fondo-video-somos {
   background: url(../../assets/fondo-verde-somos.png);
-  height: 100%;
+  height: 50rem;
   background-position: center;
   background-size: cover;
   padding-top: 5rem;
@@ -52,7 +52,70 @@
 }
 
 .box-video-somos {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 56.25%; /* 16/9 ratio */
+  overflow: hidden;
+  margin: 3rem 2rem
+}
+.box-video-somos  iframe {
+position: absolute;
+width: 50%;
+height: 50%;
+}
+
+@media (max-width: 768px) {
+  .box-banner-about {
+    height: 15rem;
+  }
+  .box-somos-yesmom {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
     display: flex;
     justify-content: center;
-    padding-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-sorteo-home {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .subtitle-about {
+    height: 4rem;
+  }
+  .nube1-somos {
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    height: 3rem;
+  }
+
+  .nube2-somos {
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+    height: 2rem;
+  }
+  .fondo-video-somos {
+    background: url(../../assets/fondo-verde-somos-responsive.png);
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+  .box-video-somos {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 1rem; /* IE6 workaround*/
+    overflow: hidden;
+    margin: 2rem
+  }
+  .box-video-somos  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    }
+    
 }

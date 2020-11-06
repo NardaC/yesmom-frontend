@@ -16,15 +16,24 @@ import regalo from ".././../assets/header/regalo.svg";
 import registrate from ".././../assets/header/registrate.svg";
 import iniciar from ".././../assets/header/iniciar-sesion.svg";
 import cesta from ".././../assets/header/cesta.svg";
+import burger from ".././../assets/header/burger.svg";
 
 const Header = () => {
   return (
     <div>
       <Navbar expand="lg" className=" justify-content-between">
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <img src={burger} alt="burger yesmom" className="burger-yesmom" />
+        </Navbar.Toggle>
+
         <Navbar.Brand href="/">
           <img src={logo} alt="logo yesmom" className="logo-yesmom" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Nav.Link href="#link" className="item-navbar">
+          <figure className="item-menu">
+            <img src={cesta} alt="logo tienda yesmom" />
+          </figure>
+        </Nav.Link> */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Form inline className="ml-auto">
             <Button variant="">
@@ -37,19 +46,19 @@ const Header = () => {
             />
           </Form>
           <Nav className="ml-auto">
-            <Nav.Link href="#home" className="item-navbar">
+            <Nav.Link href="/blog" className="item-navbar">
               <figure className="item-menu">
                 <img src={blog} alt="logo blog yesmom" />
               </figure>
               <h6>Blog</h6>
             </Nav.Link>
-            <Nav.Link href="#link" className="item-navbar">
+            <Nav.Link href="/" className="item-navbar">
               <figure className="item-menu">
                 <img src={tienda} alt="logo tienda yesmom" />
               </figure>
               <h6>Tienda</h6>
             </Nav.Link>
-            <Nav.Link href="#home" className="item-navbar">
+            <Nav.Link href="/" className="item-navbar">
               <figure className="item-menu">
                 <img src={regalo} alt="logo regalo yesmom" />
               </figure>
@@ -63,13 +72,13 @@ const Header = () => {
               />
               <h6>Regístrate</h6>
             </Nav.Link> */}
-            <Nav.Link href="#home" className="item-navbar">
+            <Nav.Link href="/login" className="item-navbar">
               <figure className="item-menu">
                 <img src={iniciar} alt="logo iniciar sesión yesmom" />
               </figure>
               <h6>Login</h6>
             </Nav.Link>
-            <Nav.Link href="#link" className="item-navbar">
+            <Nav.Link href="/" className="item-navbar">
               <figure className="item-menu">
                 <img src={cesta} alt="logo cesta yesmom" />
               </figure>

@@ -20,7 +20,7 @@ const BlogEspecific = () => {
         <h4 className="text-title-blog">Detalles de blog</h4>
         <img src={ondas} alt="ondas" className="ondas" />
       </div>
-      <div className="box-blog-general">
+      <div className="box-blog-especifico">
         <figure className="nube1">
           <img src={nube1} alt="" className="w-100" />
         </figure >
