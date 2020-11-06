@@ -78,4 +78,17 @@ html {
   html {
     font-size: 4.6vw!important;
   }
+  .title-fuxia{
+    font-size: 1.2rem;
+  }
+
+  .subtitle-dark {
+    font-size: 1rem;
+  }
+
+  .btn-yellow {
+    font-size: 1rem;
+  padding: 1.2rem 0rem;
+  width: 10rem;
+  }
 }
