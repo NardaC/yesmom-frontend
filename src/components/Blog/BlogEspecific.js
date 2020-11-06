@@ -21,15 +21,9 @@ const BlogEspecific = () => {
         <img src={ondas} alt="ondas" className="ondas" />
       </div>
       <div className="box-blog-especifico">
-        <figure className="nube1">
-          <img src={nube1} alt="" className="w-100" />
-        </figure >
-        <figure className="nube2">
-          <img src={nube2} alt="" className="w-100" />
-        </figure>
-        <figure className="nube3">
-          <img src={nube3} alt="" className="w-100" />
-        </figure>
+      <img src={nube1} alt="nube yesmom" className="nube1" />
+        <img src={nube2} alt="nube yesmom" className="nube2" />
+        <img src={nube3} alt="nube yesmom" className="nube3" />
         <div className="box-autor-blog">
           <figure>
             <img src={imgAutor} alt="" className="w-100" />
