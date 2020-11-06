@@ -25,7 +25,7 @@ const Home = () => {
       </section>
       <Container fluid="true" className="section-sorteo-home">
         <Row>
-          <Col xs>
+          <Col xs={12}>
             <div className="box-text-title">
               <img src={ondas} alt="ondas" className="ondas" />
               <h4 className="text-title">Sorteo</h4>
@@ -40,7 +40,7 @@ const Home = () => {
               <div className="btn-yellow">¡Comenzar!</div>
             </div>
           </Col>
-          <Col xs>
+          <Col xs={12}>
             <div className="box-img-sorteo-home">
               <img src={lineas1} alt="lineas" className="line-up" />
               <img
@@ -125,12 +125,12 @@ const Home = () => {
                 </Col>
               </Row>
               <Row className="box-btn-blog">
-                <Col xs>
+                <Col xs={12}>
                   <div className="btn-blog-home">
                     Mi bebé y su maleta para la clínica
                   </div>
                 </Col>
-                <Col xs>
+                <Col xs={12}>
                   <div className="btn-blog-home">
                     El cuarto soñado para mi bebé
                   </div>
