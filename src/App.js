@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Blog from "./components/Blog/Blog";
 import BlogEspecific from "./components/Blog/BlogEspecific";
 import About from "./components/About/About";
+import Building from "./components/Building/Building"
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/nosotros" exact>
               <About></About>
+            </Route>
+            <Route path="/pagina-en-construccion" exact>
+              <Building></Building>
             </Route>
           </div>
         </Switch>
