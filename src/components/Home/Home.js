@@ -130,24 +130,24 @@ const Home = () => {
                   </div>
                 </Col>
                 <Col xs={12} md={6} lg={6} xl={6}>
-                  <div className="btn-blog-home">
+                  <div className="btn-blog-home bg-yellow">
                     Artículos básicos para tu baby shower
                   </div>
                 </Col>
               </Row>
               <Row className="box-btn-blog">
                 <Col xs={12} md={6} lg={6} xl={6}>
-                  <div className="btn-blog-home">
+                  <div className="btn-blog-home bg-gray">
                     Mi bebé y su maleta para la clínica
                   </div>
                 </Col>
                 <Col xs={12} md={6} lg={6} xl={6}>
-                  <div className="btn-blog-home">
+                  <div className="btn-blog-home bg-fuxia ">
                     El cuarto soñado para mi bebé
                   </div>
                 </Col>
               </Row>
-              <a href="/blog" className="ver-mas-home">
+              <a href="/blog" className="link-a d-block text-center mt-4">
                 Ver más &#8594;
               </a>
             </Container>

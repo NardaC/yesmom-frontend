@@ -55,7 +55,13 @@ html {
 .bg-azul {
   background: #4b64a4 !important;
 }
+.bg-yellow{
+  background-color: #febf41!important;
+}
 
+.bg-gray{
+  background-color: #575650!important;
+}
 /* @media (min-width: 576px) {
   .box-web {
     max-width: 900px !important;
