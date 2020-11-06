@@ -135,6 +135,33 @@
   flex-direction: column;
   padding: 3rem 9rem;
 }
+
+@media (min-width: 1800px) {
+  .box-blog-general {
+    padding: 2rem 0rem;
+}
+.subtitle-dark-blog {
+  color: #575756;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 0rem 20rem;
+  margin-bottom: -12rem;
+  margin-top: 3rem;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+  max-width: 1600px!important;
+}
+.card-title {
+  font-size: 1rem!important;
+}
+.card-text {
+  font-size: 0.8rem;
+}
+.card-blog {
+  height: 26rem;
+}
+}
 @media (max-width: 768px) {
   .box-blog-especifico {
     padding: 1rem 1.5rem 3rem;
@@ -272,6 +299,4 @@
     top: auto;
     bottom: -150%;
   }
- 
-
 }
