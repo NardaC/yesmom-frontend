@@ -13,22 +13,24 @@ function App() {
   return (
     <Router>
       <div className="box-yesmom">
-      <Header />
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/blog" exact>
-          <Blog></Blog>
-        </Route>
-        <Route path="/blog-especific" exact>
-          <BlogEspecific></BlogEspecific>
-        </Route>
-        <Route path="/nosotros" exact>
-          <About></About>
-        </Route>
-      </Switch>
-      <Footer/>
+        <Header />
+        <Switch>
+          <div className="mt-views">
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/blog" exact>
+              <Blog></Blog>
+            </Route>
+            <Route path="/blog-especific" exact>
+              <BlogEspecific></BlogEspecific>
+            </Route>
+            <Route path="/nosotros" exact>
+              <About></About>
+            </Route>
+          </div>
+        </Switch>
+        <Footer />
       </div>
     </Router>
   );

@@ -1,5 +1,9 @@
 .navbar {
   padding: 1rem 5rem !important;
+  background: #fff;
+  z-index: 99;
+  position: fixed !important;
+  width: 100%;
 }
 
 .logo-yesmom {
@@ -30,12 +34,20 @@
   border-radius: 0 !important;
 }
 
+.nav-items-collapse {
+  margin-left: auto;
+}
+
+.ml-form-seacrh{
+  margin-left: auto;
+}
+
 @media (max-width: 769px) {
   .logo-yesmom {
     width: 3rem;
   }
 
-  .burger-yesmom{
+  .burger-yesmom {
     width: 2rem;
   }
   .navbar {
@@ -45,4 +57,51 @@
   .navbar-toggler {
     border: none !important;
   }
+
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nav-items-collapse {
+    padding-left: 5rem;
+    width: 100%;
+  }
+
+  .nav-items-collapse img{
+    display: none;
+  }
+
+  .nav-link{
+    padding:0rem 1rem!important;
+  }
+
+
+  .form-inline{
+    flex-flow: initial!important;
+    padding-top: 2rem;
+    padding-bottom: 1rem!important;
+  }
+  .ml-form-seacrh{
+    margin-left: 0;
+    
+    
+  }
+
+  .item-navbar{
+    align-items: flex-start!important;
+
+  }
+  .lupa-img{
+    width: 1.5rem;
+  }
+
+  .item-navbar h6{
+    font-size: 1.1rem;
+  }
+
+  a.item-navbar.nav-link{
+    border-bottom: .5px solid #000;
+  }
+
 }

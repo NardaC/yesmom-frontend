@@ -6,6 +6,11 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+
+.mt-views{
+padding-top: 7rem;
+}
+
 .w-80 {
   width: 80%;
 }
@@ -82,6 +87,10 @@ html {
   html {
     font-size: 4.6vw!important;
   }
+  .mt-views{
+    padding-top: 5.5rem;
+    }
+
   .title-fuxia{
     font-size: 1.2rem;
   }

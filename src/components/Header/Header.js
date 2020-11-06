@@ -35,9 +35,9 @@ const Header = () => {
           </figure>
         </Nav.Link> */}
         <Navbar.Collapse id="basic-navbar-nav">
-          <Form inline className="ml-auto">
+          <Form inline className="ml-form-seacrh{">
             <Button variant="">
-              <img src={lupa} alt="" />
+              <img src={lupa} alt="lupa yesmom" className="lupa-img"/>
             </Button>
             <FormControl
               type="text"
@@ -45,7 +45,7 @@ const Header = () => {
               className="mr-sm-2 input-search"
             />
           </Form>
-          <Nav className="ml-auto">
+          <Nav className="nav-items-collapse">
             <Nav.Link href="/blog" className="item-navbar">
               <figure className="item-menu">
                 <img src={blog} alt="logo blog yesmom" />
