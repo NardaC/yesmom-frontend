@@ -2,8 +2,6 @@
   padding: 1rem 5rem !important;
   background: #fff;
   z-index: 99;
-  position: fixed !important;
-  width: 100%;
 }
 
 .logo-yesmom {
@@ -85,7 +83,6 @@
   .ml-form-seacrh{
     margin-left: 0;
     
-    
   }
 
   .item-navbar{
@@ -101,7 +98,11 @@
   }
 
   a.item-navbar.nav-link{
-    border-bottom: .5px solid #000;
+    border-bottom: .5px solid #575756;
+  }
+  .navbar {
+    position: fixed !important;
+    width: 100%;
   }
 
 }
