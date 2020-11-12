@@ -17,6 +17,7 @@ import registrate from ".././../assets/header/registrate.svg";
 import iniciar from ".././../assets/header/iniciar-sesion.svg";
 import cesta from ".././../assets/header/cesta.svg";
 import burger from ".././../assets/header/burger.svg";
+import { NavLink} from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -46,24 +47,24 @@ const Header = () => {
             />
           </Form>
           <Nav className="nav-items-collapse">
-            <Nav.Link href="/blog" className="item-navbar">
+            <NavLink to="/blog" className="item-navbar"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={blog} alt="logo blog yesmom" />
               </figure>
               <h6>Blog</h6>
-            </Nav.Link>
-            <Nav.Link href="/" className="item-navbar">
+            </NavLink>
+            <NavLink to="/tienda" className="item-navbar"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={tienda} alt="logo tienda yesmom" />
               </figure>
               <h6>Tienda</h6>
-            </Nav.Link>
-            <Nav.Link href="/" className="item-navbar">
+            </NavLink>
+            <NavLink to="/regalos" className="item-navbar"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={regalo} alt="logo regalo yesmom" />
               </figure>
               <h6>Regalos</h6>
-            </Nav.Link>
+            </NavLink>
             {/* <Nav.Link href="#link" className="item-navbar">
               <img
                 src={registrate}
@@ -72,18 +73,18 @@ const Header = () => {
               />
               <h6>Regístrate</h6>
             </Nav.Link> */}
-            <Nav.Link href="/login" className="item-navbar">
+            <NavLink to="/login" className="item-navbar"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={iniciar} alt="logo iniciar sesión yesmom" />
               </figure>
               <h6>Login</h6>
-            </Nav.Link>
-            <Nav.Link href="/" className="item-navbar">
+            </NavLink>
+            <NavLink to="/cesta" className="item-navbar"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={cesta} alt="logo cesta yesmom" />
               </figure>
               <h6>Cesta</h6>
-            </Nav.Link>
+            </NavLink>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

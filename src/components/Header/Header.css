@@ -13,6 +13,8 @@
   justify-content: center;
   align-items: center;
   font-family: "Montserrat", sans-serif;
+  margin: 0rem 0.5rem;
+  text-decoration: none;
 }
 
 .item-menu {
@@ -42,6 +44,19 @@
 
 .lupa-img {
   width: 1.8rem;
+}
+.item-navbar h6 {
+  color:#616160;
+  text-decoration: none;
+}
+.item-navbar h6:hover {
+  text-decoration: none!important;
+}
+.item-navbar:link, .item-navbar:visited, .item-navbar:active {
+  text-decoration:none;
+}
+.is-active  h6{
+  font-weight: 800;
 }
 @media (min-width: 1800px) {
   .logo-yesmom {
