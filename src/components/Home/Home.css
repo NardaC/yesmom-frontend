@@ -6,8 +6,16 @@
 
 .box-banner-btns {
   position: absolute;
+  top: 0%;
+  left: 60%;
+  background: linear-gradient(270deg, #FFFFFF -63.19%, rgba(255, 251, 251, 0) 100%, rgba(255, 251, 251, 0) 100%, rgba(255, 251, 251, 0) 100%);
+  height: 100%;
+  width: 40%;
+}
+
+.box-banner-btns-group{
+  position: relative;
   top: 25%;
-  right: 10%;
 }
 
 .box-banner-regalos {
@@ -16,6 +24,7 @@
   align-items: center;
   margin-top: 1rem;
   flex-direction: row;
+  
 }
 
 .box-banner .banner {
@@ -23,6 +32,7 @@
   object-fit: cover;
   object-position: center;
   height: 100%;
+  position: absolute;
 }
 
 .ondas-banner {
@@ -36,23 +46,22 @@
 
 .btn-regalos {
   background-color: #febf41;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.31rem;
   color: #fff;
   padding: 1.5rem 0rem;
-  margin: 2rem auto;
-  width: 13rem;
+  margin: 1rem;
+  width: 11rem;
   border-radius: 30px;
   text-align: center;
   line-height: 1.3rem;
+  font-family: "omnes-bold";
 }
 
 .box-text-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 7rem;
+  padding-top: 4rem;
 }
 .text-title {
   font-family: "Clicker Script", cursive;
@@ -158,7 +167,7 @@
 .btn-lo-mejor {
   padding: 1.5rem;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "omnes-bold";
   font-weight: 1000;
   font-size: 1.3rem;
   width: 13rem;
@@ -233,11 +242,21 @@
 }
 
 
+.box-true-history{
+  width: 32.5rem;
+  text-align: center;
+  margin: auto;
+}
+
+.box-blog-card-home{
+  flex: 0 0 46%!important;
+}
 
 @media (min-width: 1800px) {
   .box-banner {
     height: 25rem;
     width: auto;
+    
   }
 
   .section-sorteo-home {
@@ -264,7 +283,7 @@
   .box-sorteo-home .subtitle-dark {
     font-size: 1.2rem;
   }
-  .btn-yellow {
+  /* .btn-yellow {
     font-weight: 900;
     font-size: 1rem;
     color: #fff;
@@ -272,7 +291,8 @@
     margin: 1rem auto;
     width: 8rem;
     border-radius: 30px;
-  }
+    font-family: "omnes-bold";
+  } */
   .img-sorteo {
     width: 80%;
   }
@@ -469,7 +489,11 @@
     height: 5rem;
   }
   .box-banner-btns {
-    top: 45%;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
   }
   .box-banner-regalos {
     flex-direction: column;
@@ -480,5 +504,11 @@
     width: 15rem;
     margin: 0.8rem auto;
     font-size: 1rem;
+  }
+
+  .box-true-history{
+    width: 80%;
+    display: block;
+    margin: auto;
   }
 }

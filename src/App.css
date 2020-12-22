@@ -1,9 +1,51 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
 
+@font-face{
+  font-family: "mont-heavy";
+  src: url(fonts/Mont-Heavy.otf);
+}
+
+@font-face{
+  font-family: "omnes-bold";
+  src: url(fonts/OMNES-BOLD.OTF);
+}
+
+@font-face{
+  font-family: "omnes-regular";
+  src: url(fonts/Omnes-Regular.otf);
+}
+
+@font-face{
+  font-family: "mont-heavy";
+  src: url(fonts/Mont-Heavy.otf);
+}
+
+@font-face{
+  font-family: "mont-thin";
+  src: url(fonts/Mont-Thin.otf);
+}
+
+@font-face{
+  font-family: "mont-regular";
+  src: url(fonts/Mont-Regular.otf);
+}
+
+@font-face{
+  font-family: "mont-semibold";
+  src: url(fonts/Mont-SemiBold.otf)
+}
+
+
+@font-face{
+  font-family: "mont-light";
+  src: url(fonts/Mont-Light.otf);
+}
+
+
 html {
   font-size: 0.98vw !important;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-heavy";
 }
 
 .mt-views {
@@ -13,30 +55,38 @@ html {
 .w-80 {
   width: 80%;
 }
+.w-90{
+  width: 90%;
+}
 
+
+.sin-margin{
+  margin-left: 0px!important;
+  margin-right:  0px!important;
+}
 .pl-10 {
   padding-left: 6rem;
 }
 .title-fuxia {
   color: #ec608d;
   font-weight: 1000;
-  font-size: 2.2rem;
-  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  font-family: "mont-heavy";
   padding: 0 1rem;
   text-align: center;
 }
 
 .subtitle-dark {
   color: #575756;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-regular";
   font-size: 2rem;
 }
 
 .btn-yellow {
   background-color: #febf41;
-  font-family: "Montserrat", sans-serif;
+  font-family: "omnes-bold";
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #fff;
   padding: 1.5rem 0rem;
   margin: 2rem auto;
@@ -89,8 +139,11 @@ html {
 }
 .link-a {
   color: #575756;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-regular";
   font-size: 1.1rem;
+}
+.link-a b{
+  font-family: "mont-heavy";
 }
 
 .view-desktop {
@@ -128,4 +181,114 @@ html {
     padding: 1.2rem 0rem;
     width: 10rem;
   }
+}
+
+/*  ****************** ANIMACIONES ************************ */
+
+.heartbeat {
+	-webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+ @-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+
+.flicker-1 {
+	-webkit-animation: flicker-1 2s linear infinite both;
+	        animation: flicker-1 2s linear infinite both;
+}
+
+
+.fade-in {
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }

@@ -17,10 +17,10 @@
 
 .subtitle-dark-blog {
   color: #575756;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-regular";
   font-size: 1.7rem;
   text-align: center;
-  margin: 0rem 20rem;
+  margin: 0rem 15rem;
   margin-bottom: -12rem;
   margin-top: 3rem;
 }
@@ -35,10 +35,10 @@
   background: #ffffff;
   box-shadow: 0px 14px 20px -5px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-regular";
   border-radius: 1.28rem !important;
   width: 18rem;
-  height: 29rem;
+  height: auto;
 }
 .box-green-blog {
   position: relative;
@@ -46,7 +46,7 @@
 
 .text-bottom-blog {
   color: #abc0a3;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-regular";
   font-size: 1.7rem;
   text-align: center;
   /* margin: 3rem 20rem; */
@@ -56,10 +56,18 @@
   transform: translateX(-50%);
 }
 
+.text-bottom-blog b {
+  font-family: "mont-semibold";
+}
+.font-mont-regular{
+  font-family: "mont-regular";
+}
+
 .box-blog-especifico {
   width: 100%;
   display: flex;
   padding: 4rem 9rem;
+  font-family: "mont-regular";
 }
 
 .box-autor-blog {
@@ -81,6 +89,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 1.2rem;
+  font-family: "mont-heavy";
 }
 .text-fecha {
   color: #556ea1;
@@ -96,7 +105,7 @@
   align-items: center;
 }
 .box-articulo-title-blog h2 {
-  font-family: "Montserrat";
+  font-family: "mont-semibold";
   font-style: normal;
   font-weight: bold;
   text-align: center;
@@ -134,7 +143,27 @@
   justify-content: center;
   flex-direction: column;
   padding: 3rem 9rem;
+  font-family: "mont-regular";
 }
+
+.card-title {
+  font-family: "mont-semibold";
+}
+
+.card-text{
+  font-family: "mont-light";
+}
+.jodit, .jodit *, .jodit-container, .jodit-container * span{
+  font-family: "mont-regular"!important;
+}
+
+.font-semibold-mont{
+  font-family: "mont-semibold";
+}
+.jodit-status-bar{
+  display: none!important;
+}
+
 
 @media (min-width: 1800px) {
   .box-blog-general {
@@ -142,7 +171,7 @@
 }
 .subtitle-dark-blog {
   color: #575756;
-  font-family: "Montserrat", sans-serif;
+  font-family: "mont-semibold";
   font-size: 1.3rem;
   text-align: center;
   margin: 0rem 20rem;
@@ -264,7 +293,7 @@
     font-family: "Montserrat", sans-serif;
     border-radius: 1.28rem !important;
     width: 18rem;
-    height: 30rem;
+    height: auto;
   }
   .box-green-blog-img-fondo {
     position: absolute;
