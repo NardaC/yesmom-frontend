@@ -6,10 +6,10 @@ import { Card, CardDeck, Container } from "react-bootstrap";
 import ondas from "../../assets/onda-blanca.svg";
 import blog1 from "../../assets/blog/blog1.png";
 import fondo from "../../assets/blog/fondo-verde.png";
-
+import CardBlog from "./CardBlog"
 const Blog = () => {
   return (
-    <>
+    <div className="fade-in animated">
       <div className="box-banner-blog">
         <img src={ondas} alt="ondas" className="ondas" />
         <h4 className="text-title-blog">Blog</h4>
@@ -23,12 +23,18 @@ const Blog = () => {
         <div className="box-card-group">
           <Container>
             <CardDeck>
-              <Card className=" card-blog">
+              <CardBlog/>
+              <CardBlog/>
+              <CardBlog/>
+              <CardBlog/>
+              {/* <CardBlog/>
+              <CardBlog/> */}
+              {/* <Card className=" card-blog">
                 <Card.Img variant="top" src={blog1} />
                 <Card.Body>
                   <Card.Title>Tips para tu baby shower virtual</Card.Title>
                   <Card.Text>
-                    Te damos estos consejos para que todo salga increíble.
+                  ¿Tu Baby Shower se encuentra cada vez más cerca y tus seres queridos quieren celebrarlo contigo? Te dejamos unos consejos para disfrutar de una mejor manera tu baby shower virtual.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -40,8 +46,7 @@ const Blog = () => {
                 <Card.Body>
                   <Card.Title>Artículos básicos para tu baby shower</Card.Title>
                   <Card.Text>
-                    ¿Estás por celebrar tu baby shower y no sabes qué artículos
-                    poner en tu listade regalos? Nosotros te ayudamos.
+                  Si deseas realizar el mejor regalo de baby shower para una mamá primeriza, llegaste al lugar correcto. ¡Conoce los mejores regalos para bebés recién nacidos!
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -53,9 +58,7 @@ const Blog = () => {
                 <Card.Body>
                   <Card.Title>Mi bebé y su maleta para la clínica</Card.Title>
                   <Card.Text>
-                    ¿Sabes qué cosas vas a necesitar cuando vayas a la clínica con
-                    tu bebé?. Te dejamos algunas ideas que pueden servirte en esos
-                    momentos de indecisión.
+                  La mejor manera de pasar esta última etapa es permaneciendo tranquila y relajada. Te va a ayudar saber que tienes todo preparado para cuando llegue el gran momento. ¿Qué debo llevar al hospital en los bolsos maternales?
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
@@ -67,27 +70,25 @@ const Blog = () => {
                 <Card.Body>
                   <Card.Title>El cuarto soñado para mi bebé</Card.Title>
                   <Card.Text>
-                    Faltan pocos meses para recibir al nuevo integrante de la
-                    familia y tú todavía estás dándole vuelta a la decoración de
-                    su dormitorio. Te ayudamos con algunas ideas.
+                  Elegir y decorar la habitación del bebé es uno de los preparativos más importantes si estás esperando a tu hijo/a. En el siguiente blog te damos algunas claves.
                 </Card.Text>
                 </Card.Body>
                 <Card.Footer>
                   <a href="/blog-especific">Leer más &#8594;</a>
                 </Card.Footer>
-              </Card>
+              </Card> */}
             </CardDeck>
           </Container>
         </div>
       </div>
       <div className="box-green-blog">
         <img src={fondo} alt="" className="w-100 box-green-blog-img-fondo" />
-        <h6 className="text-bottom-blog">
+        <h6 className="text-bottom-blog ">
           Para el mundo eres una mamá,<br></br>
           <b>para tus hijos eres el mundo</b>
         </h6>
       </div>
-    </>
+    </div>
   );
 };
 
