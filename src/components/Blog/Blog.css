@@ -164,6 +164,9 @@
   display: none!important;
 }
 
+.jodit-container {
+  height: 10rem!important;
+}
 
 @media (min-width: 1800px) {
   .box-blog-general {
@@ -203,6 +206,8 @@
   right: 15%;
 }
 }
+
+
 @media (max-width: 768px) {
   .box-blog-especifico {
     padding: 1rem 1.5rem 3rem;

@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
+import {NavLink} from "react-router-dom"
 import CardBlog from "../Blog/CardBlog"
 import "./Home.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
 import banner from "../../assets/home/banner.png";
@@ -21,8 +21,29 @@ import blog from "../../assets/home/img-blog-home.png";
 import blog1 from "../../assets/blog/blog1.png";
 import lineasAzul1 from "../../assets/lineas-azul1.svg";
 import lineasAzul2 from "../../assets/lineas-azul2.svg";
+import clienteAxiosBusiness from "../../config/axiosBusiness"
 
 const Home = () => {
+  const [currentData, setCurrentData]=useState([])
+  
+  const blogHome = async () => {
+    await clienteAxiosBusiness.get('/getBlogAll/user?limit=2')
+      .then((res) => {
+        if (res.data.MensajeRespuesta === "NO EXISTEN DATOS") {
+          setCurrentData([]);
+        } else {
+          setCurrentData(res.data);
+          console.log(res.data, "++++++judith-por vencer")
+        }
+        // setLoading(false);
+      })
+      .catch((e) => {
+        console.log(e, "error");
+      });
+  }
+  useEffect(() => {
+    blogHome();
+  }, [])
   return (
     <div className="fade-in animated">
       <section fluid="true" className="box-banner">
@@ -140,7 +161,7 @@ const Home = () => {
                   tienes en estos momentos. No te preocupes ¡Lo resolveremos
                   juntas!
                 </h6>
-                <div className="btn-yellow">Ver más</div>
+                <NavLink className="btn-yellow" to="/blog">Ver más</NavLink>
                 {/* <a href="/blog" className="link-a d-block text-center mt-4">
                   Ver más &#8594;
                 </a> */}
@@ -150,8 +171,13 @@ const Home = () => {
           <Col xs={12} md={6} lg={6} xl={6} className="box-blog-card-home">
             <Container>
               <CardDeck>
-               <CardBlog/>
-               <CardBlog/>
+                {
+                  currentData.map((cardBlog =>(
+                    <CardBlog  blog={cardBlog}/>
+                  )))
+                }
+                {/* <CardBlog />
+                <CardBlog /> */}
               </CardDeck>
             </Container>
           </Col>

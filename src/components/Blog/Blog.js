@@ -1,13 +1,32 @@
-import React from "react";
-
+import React, { Fragment, useEffect, useState } from "react";
 import "./Blog.css";
-
 import { Card, CardDeck, Container } from "react-bootstrap";
 import ondas from "../../assets/onda-blanca.svg";
 import blog1 from "../../assets/blog/blog1.png";
 import fondo from "../../assets/blog/fondo-verde.png";
-import CardBlog from "./CardBlog"
+import CardBlog from "./CardBlog";
+import clienteAxiosBusiness from "../../config/axiosBusiness"
 const Blog = () => {
+  const [currentData, setCurrentData]=useState([])
+  
+  const arrayBlog = async () => {
+    await clienteAxiosBusiness.get('/getBlogAll/user?limit=all')
+      .then((res) => {
+        if (res.data.MensajeRespuesta === "NO EXISTEN DATOS") {
+          setCurrentData([]);
+        } else {
+          setCurrentData(res.data);
+          console.log(res.data, "++++++judith-por vencer")
+        }
+        // setLoading(false);
+      })
+      .catch((e) => {
+        console.log(e, "error");
+      });
+  }
+  useEffect(() => {
+    arrayBlog();
+  }, [])
   return (
     <div className="fade-in animated">
       <div className="box-banner-blog">
@@ -23,10 +42,11 @@ const Blog = () => {
         <div className="box-card-group">
           <Container>
             <CardDeck>
-              <CardBlog/>
-              <CardBlog/>
-              <CardBlog/>
-              <CardBlog/>
+               {
+                  currentData.map((cardBlog =>(
+                    <CardBlog  blog={cardBlog}/>
+                  )))
+                }
               {/* <CardBlog/>
               <CardBlog/> */}
               {/* <Card className=" card-blog">
