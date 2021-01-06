@@ -3,7 +3,7 @@ import "./building.css"
 import imgFoto from "./../../assets/construccion/proximamente.png"
 const Building = () => {
     return (
-        <div className="box-building">
+        <div className="box-building fade-in animated">
             <div className="section-building">
                 <img src={imgFoto} className="img-foto" alt="mamá con su bebé"/>
                 <div className="box-text-building">

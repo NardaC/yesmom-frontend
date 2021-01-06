@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
-import {NavLink} from "react-router-dom"
-import CardBlog from "../Blog/CardBlog"
+import { NavLink } from "react-router-dom";
+import CardBlog from "../Blog/CardBlog";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, Card, CardDeck } from "react-bootstrap";
@@ -21,29 +21,30 @@ import blog from "../../assets/home/img-blog-home.png";
 import blog1 from "../../assets/blog/blog1.png";
 import lineasAzul1 from "../../assets/lineas-azul1.svg";
 import lineasAzul2 from "../../assets/lineas-azul2.svg";
-import clienteAxiosBusiness from "../../config/axiosBusiness"
+import clienteAxiosBusiness from "../../config/axiosBusiness";
 
 const Home = () => {
-  const [currentData, setCurrentData]=useState([])
-  
+  const [currentData, setCurrentData] = useState([]);
+
   const blogHome = async () => {
-    await clienteAxiosBusiness.get('/getBlogAll/user?limit=2')
+    await clienteAxiosBusiness
+      .get("/getBlogAll/user?limit=2")
       .then((res) => {
         if (res.data.MensajeRespuesta === "NO EXISTEN DATOS") {
           setCurrentData([]);
         } else {
           setCurrentData(res.data);
-          console.log(res.data, "++++++judith-por vencer")
+          console.log(res.data, "++++++judith-por vencer");
         }
         // setLoading(false);
       })
       .catch((e) => {
         console.log(e, "error");
       });
-  }
+  };
   useEffect(() => {
     blogHome();
-  }, [])
+  }, []);
   return (
     <div className="fade-in animated">
       <section fluid="true" className="box-banner">
@@ -54,13 +55,17 @@ const Home = () => {
             <h3 className="title-fuxia w-80 m-auto">
               Encuentra tu regalo soñado
             </h3>
-            <img src={ondas} alt="ondas" className="ondas d-block m-auto heartbeat" />
+            <img
+              src={ondas}
+              alt="ondas"
+              className="ondas d-block m-auto heartbeat"
+            />
             <div className="box-banner-regalos">
-              <div className="btn-regalos bg-azul">Crear lista de regalos</div>
-              <div className="btn-regalos">Buscar lista de regalos</div>
+              <div className="btn-regalos bg-fuxia hover-fuxia">Crear lista de regalos</div>
+              <div className="btn-regalos hover-amarillo">Buscar lista de regalos</div>
             </div>
-            <p className="link-a text-center">
-              ¿Ya registrado? <b>Inicia sesión</b>{" "}
+            <p className="link-a text-center ">
+              ¿Ya registrado? <span className="hover-efect"><b >Inicia sesión</b></span>
             </p>
           </div>
         </div>
@@ -69,9 +74,9 @@ const Home = () => {
         <Row className="sin-margin">
           <Col xs={12} md={6} lg={6} xl={6}>
             <div className="box-text-title">
-              <img src={ondas} alt="ondas" className="ondas heartbeat" />
-              <h4 className="text-title">Sorteo</h4>
-              <img src={ondas} alt="ondas" className="ondas heartbeat" />
+              <img src={ondas} alt="ondas" className="ondas " />
+              <h4 className="text-title heartbeat">Sorteo</h4>
+              <img src={ondas} alt="ondas" className="ondas " />
             </div>
             <div className="box-sorteo-home">
               <h3 className="title-fuxia">Gana un pack Yes Mom</h3>
@@ -79,7 +84,10 @@ const Home = () => {
                 Crea una lista de regalo y gana un pack de productos para ti y
                 tu bebé
               </h6>
-              <div className="btn-yellow">¡Comenzar!</div>
+              <NavLink to="/pagina-en-construccion">
+              <div className="btn-yellow  hover-amarillo">¡Comenzar!</div>
+              </NavLink>
+              
               <a className="link-a">*Términos y condiciones</a>
             </div>
           </Col>
@@ -91,7 +99,11 @@ const Home = () => {
                 alt="imagen sorteo yesmom home"
                 className="img-sorteo"
               />
-              <img src={lineas2} alt="lineas " className="line-down heartbeat" />
+              <img
+                src={lineas2}
+                alt="lineas "
+                className="line-down heartbeat"
+              />
             </div>
           </Col>
         </Row>
@@ -99,11 +111,21 @@ const Home = () => {
       <Container fluid="true" className="section-lo-mejor-home">
         <img src={nube} alt="nube yesmom" className="nube-up" />
         <div className="box-title-lo-mejor-home">
-          <FontAwesomeIcon icon={faStar} className="heartbeat"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faStar}
+            className="heartbeat"
+          ></FontAwesomeIcon>
           <h3 className="title-fuxia">Lo mejor para tu bebé</h3>
-          <FontAwesomeIcon icon={faStar} className="heartbeat"></FontAwesomeIcon>
+          <FontAwesomeIcon
+            icon={faStar}
+            className="heartbeat"
+          ></FontAwesomeIcon>
         </div>
-        <img src={ondaRosa} alt="onda rosa yes mom" className="onda-rosa heartbeat" />
+        <img
+          src={ondaRosa}
+          alt="onda rosa yes mom"
+          className="onda-rosa heartbeat"
+        />
         <Row className="box-img-lo-mejor">
           <Col xs>
             <div className="img-lo-mejor">
@@ -151,7 +173,7 @@ const Home = () => {
             <div className="box-true-history">
               <div className="box-text-title">
                 <img src={ondas} alt="ondas" className="ondas" />
-                <h4 className="text-title">Blog</h4>
+                <h4 className="text-title heartbeat">Blog</h4>
                 <img src={ondas} alt="ondas" className="ondas" />
               </div>
               <h3 className="title-fuxia mt-2">#TrueStoryMom</h3>
@@ -161,7 +183,10 @@ const Home = () => {
                   tienes en estos momentos. No te preocupes ¡Lo resolveremos
                   juntas!
                 </h6>
-                <NavLink className="btn-yellow" to="/blog">Ver más</NavLink>
+                <NavLink to="/blog">
+                  <div className="btn-yellow">Ver más</div>
+                </NavLink>
+
                 {/* <a href="/blog" className="link-a d-block text-center mt-4">
                   Ver más &#8594;
                 </a> */}
@@ -171,11 +196,9 @@ const Home = () => {
           <Col xs={12} md={6} lg={6} xl={6} className="box-blog-card-home">
             <Container>
               <CardDeck>
-                {
-                  currentData.map((cardBlog =>(
-                    <CardBlog  blog={cardBlog}/>
-                  )))
-                }
+                {currentData.map((cardBlog) => (
+                  <CardBlog blog={cardBlog} />
+                ))}
                 {/* <CardBlog />
                 <CardBlog /> */}
               </CardDeck>

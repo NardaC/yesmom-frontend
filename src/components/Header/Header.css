@@ -45,12 +45,22 @@
 .lupa-img {
   width: 1.8rem;
 }
+
+
+@keyframes animateHeart{
+  0%{transform:scale(1);}
+  40%{transform:scale(1.09);}
+  100%{transform:scale(1.1);}
+}
+
+
 .item-navbar h6 {
   color:#616160;
   text-decoration: none;
 }
 .item-navbar h6:hover {
   text-decoration: none!important;
+
 }
 .item-navbar:link, .item-navbar:visited, .item-navbar:active {
   text-decoration:none;
@@ -58,6 +68,20 @@
 .is-active  h6{
   font-weight: 800;
 }
+
+.hover-efect{
+  animation: animateHeart .3s linear forwards!important;
+  cursor: pointer;
+}
+.hover-efect:hover, .hover-efect:focus{
+  transform: scale(1.2)!important;
+  
+}
+
+
+
+
+
 @media (min-width: 1800px) {
   .logo-yesmom {
     width: 3.5rem;

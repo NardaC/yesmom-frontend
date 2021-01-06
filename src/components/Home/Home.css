@@ -55,6 +55,7 @@
   text-align: center;
   line-height: 1.3rem;
   font-family: "omnes-bold";
+  position: relative;
 }
 
 .box-text-title {

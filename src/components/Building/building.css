@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
+  
 }
 .section-building {
   display: flex;
@@ -18,12 +19,13 @@
 }
 .text-building {
   font-style: normal;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   line-height: 2.5rem;
   align-items: center;
   text-align: center;
   color: #ffffff;
+  font-family: "mont-semibold";
 }
 .btn-building {
   width: 20rem;

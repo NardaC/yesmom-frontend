@@ -27,8 +27,8 @@ const Header = () => {
           <img src={burger} alt="burger yesmom" className="burger-yesmom" />
         </Navbar.Toggle>
 
-        <Navbar.Brand href="/">
-          <img src={logo} alt="logo yesmom" className="logo-yesmom" />
+        <Navbar.Brand href="/" className="hover-efect">
+          <img src={logo} alt="logo yesmom" className="logo-yesmom " />
         </Navbar.Brand>
         {/* <Nav.Link href="#link" className="item-navbar">
           <figure className="item-menu">
@@ -47,19 +47,19 @@ const Header = () => {
             />
           </Form>
           <Nav className="nav-items-collapse">
-            <NavLink to="/blog" className="item-navbar"  activeClassName='is-active'>
-              <figure className="item-menu">
-                <img src={blog} alt="logo blog yesmom" />
+            <NavLink to="/blog" className="item-navbar hover-efect"  activeClassName='is-active'>
+              <figure className="item-menu ">
+                <img src={blog} alt="logo blog yesmom " />
               </figure>
-              <h6>Blog</h6>
+              <h6 className="">Blog</h6>
             </NavLink>
-            <NavLink to="/tienda" className="item-navbar"  activeClassName='is-active'>
+            <NavLink to="/pagina-en-construccion" className="item-navbar hover-efect"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={tienda} alt="logo tienda yesmom" />
               </figure>
               <h6>Tienda</h6>
             </NavLink>
-            <NavLink to="/regalos" className="item-navbar"  activeClassName='is-active'>
+            <NavLink to="/pagina-en-construccion" className="item-navbar hover-efect"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={regalo} alt="logo regalo yesmom" />
               </figure>
@@ -73,18 +73,18 @@ const Header = () => {
               />
               <h6>Regístrate</h6>
             </Nav.Link> */}
-            <NavLink to="/login" className="item-navbar"  activeClassName='is-active'>
+            <NavLink to="/pagina-en-construccion" className="item-navbar hover-efect"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={iniciar} alt="logo iniciar sesión yesmom" />
               </figure>
               <h6>Login</h6>
             </NavLink>
-            <NavLink to="/cesta" className="item-navbar"  activeClassName='is-active'>
+            {/* <NavLink to="/cesta" className="item-navbar"  activeClassName='is-active'>
               <figure className="item-menu">
                 <img src={cesta} alt="logo cesta yesmom" />
               </figure>
               <h6>Cesta</h6>
-            </NavLink>
+            </NavLink> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
