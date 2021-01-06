@@ -56,6 +56,7 @@
   line-height: 1.3rem;
   font-family: "omnes-bold";
   position: relative;
+  cursor: pointer;
 }
 
 .box-text-title {
@@ -107,10 +108,11 @@
       rgba(229, 209, 231, 0.5) 13.49%,
       rgba(150, 199, 236, 0.5) 100%
     ),
-    url("../../assets/home/shop.svg");
+    url("../../assets/home/shop.svg") repeat;
   padding: 6rem 0rem;
   position: relative;
-  background-position: right bottom;
+  background-position: top bottom;
+  background-size: cover;
 }
 
 .box-title-lo-mejor-home {
@@ -176,13 +178,17 @@
   margin: auto;
   background-color: #febf41;
   border-radius: 25px;
-  color: #fff;
+  color: #fff!important;
   line-height: 1.3rem;
   position: relative;
   top: -3%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-lo-mejor a{
+  color: #fff!important;
 }
 .section-blog-home {
   padding: 4rem 0;
@@ -237,9 +243,6 @@
 
 .box-btn-blog {
   margin: 0rem 5rem 0rem 5rem !important;
-}
-
-.ver-mas-home {
 }
 
 

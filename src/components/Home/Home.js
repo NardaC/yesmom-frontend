@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import CardBlog from "../Blog/CardBlog";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -61,11 +61,18 @@ const Home = () => {
               className="ondas d-block m-auto heartbeat"
             />
             <div className="box-banner-regalos">
-              <div className="btn-regalos bg-fuxia hover-fuxia">Crear lista de regalos</div>
-              <div className="btn-regalos hover-amarillo">Buscar lista de regalos</div>
+              <div className="btn-regalos bg-fuxia hover-fuxia">
+                Crear lista de regalos
+              </div>
+              <div className="btn-regalos hover-amarillo">
+                Buscar lista de regalos
+              </div>
             </div>
             <p className="link-a text-center ">
-              ¿Ya registrado? <span className="hover-efect"><b >Inicia sesión</b></span>
+              ¿Ya registrado?{" "}
+              <span className="hover-efect-letter">
+                <b>Inicia sesión</b>
+              </span>
             </p>
           </div>
         </div>
@@ -84,11 +91,18 @@ const Home = () => {
                 Crea una lista de regalo y gana un pack de productos para ti y
                 tu bebé
               </h6>
-              <NavLink to="/pagina-en-construccion">
-              <div className="btn-yellow  hover-amarillo">¡Comenzar!</div>
-              </NavLink>
-              
-              <a className="link-a">*Términos y condiciones</a>
+              <div>
+                <NavLink
+                  to="/pagina-en-construccion"
+                  className="btn-yellow  hover-amarillo"
+                >
+                  ¡Comenzar!
+                </NavLink>
+              </div>
+
+              <a className="link-a hover-efect-letter">
+                *Términos y condiciones
+              </a>
             </div>
           </Col>
           <Col xs={12} md={6} lg={6} xl={6}>
@@ -128,30 +142,43 @@ const Home = () => {
         />
         <Row className="box-img-lo-mejor">
           <Col xs>
-            <div className="img-lo-mejor">
+            <div className="img-lo-mejor ">
               <img src={destacado} alt="" />
             </div>
-            <div className="btn-lo-mejor">Tiendas destacadas</div>
+            <div>
+              <Link
+                to="/pagina-en-construccion"
+                className="btn-lo-mejor hover-amarillo"
+              >
+                Tiendas destacadas
+              </Link>
+            </div>
           </Col>
           <Col xs>
             <div className="img-lo-mejor">
               <img src={buscado} alt="" />
             </div>
-            <div className="btn-lo-mejor bg-fuxia">
-              Lo + <br></br> buscado
+            <div className="btn-lo-mejor bg-fuxia hover-fuxia">
+              <Link to="/pagina-en-construccion">
+                Lo + <br></br> buscado
+              </Link>
             </div>
           </Col>
           <Col xs>
             <div className="img-lo-mejor">
               <img src={sinMoverte} alt="" />
             </div>
-            <div className="btn-lo-mejor bg-verde">Sin moverte de casa</div>
+            <div className="btn-lo-mejor bg-verde hover-verde">
+              <Link to="/pagina-en-construccion">Sin moverte de casa</Link>
+            </div>
           </Col>
           <Col xs>
             <div className="img-lo-mejor">
               <img src={juguetes} alt="" />
             </div>
-            <div className="btn-lo-mejor bg-azul">Juguetes</div>
+            <div className="btn-lo-mejor bg-azul hover-azul">
+              <Link to="/pagina-en-construccion">Juguetes</Link>
+            </div>
           </Col>
         </Row>
         <img src={nube} alt="nube yesmom" className="nube-down" />
